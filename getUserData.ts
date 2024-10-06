@@ -74,7 +74,7 @@ function rePrint(text: string) {
       nextCursor = response.response_metadata?.next_cursor;
     } while (nextCursor);
 
-    console.log(`Inserted ${memberCount} members into the db`);
+    console.log(`\n\nInserted ${memberCount} members into the db`);
   } catch (error) {
     console.error(error);
   }
