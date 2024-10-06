@@ -57,7 +57,7 @@ function rePrint(text: string) {
         cursor: nextCursor,
       });
 
-      const members = response.members as User[];
+      const members = response.members!;
 
       let i = 0;
       for (const member of members) {
@@ -66,7 +66,14 @@ function rePrint(text: string) {
             memberCount + i
           }/${assumedMemberCount} inserting ${member.name}`
         );
-        stmt.run(member.id, member.name, member.real_name, member.is_admin);
+
+        const asd = member.profile?.display_name;
+        stmt.run(
+          member.id!,
+          member.profile?.display_name!,
+          member.profile?.real_name!,
+          member.is_admin!
+        );
         i++;
       }
 
