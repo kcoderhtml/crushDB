@@ -22,7 +22,7 @@ type User = {
   is_admin: boolean;
 };
 
-const assumedMemberCount = 39739;
+const assumedMemberCount = 62849;
 
 function rePrint(text: string) {
   process.stdout.clearLine(0);
