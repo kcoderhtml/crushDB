@@ -1,5 +1,9 @@
 # crushdb
 
+Indexing every user on slack to create the ultimate zkcrush rainbow table
+
+---
+
 To install dependencies:
 
 ```bash
