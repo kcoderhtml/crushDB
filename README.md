@@ -1,5 +1,7 @@
 # crushDB
 
+![a confession with zkcrush](.github/images/confession.png)
+
 Indexing every user on slack to create the ultimate zkcrush rainbow table
 
 ---
