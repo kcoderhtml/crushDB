@@ -1,0 +1,24 @@
+display_information:
+  name: CrushDB
+  description: zkcrush rainbow table
+  background_color: "#c9571e"
+  long_description: A giant ranbow table of zkcrush hashes generated from all users name and display name as of 2024-10-06 containing over 51295 users and double that amount of hashes; this truely is the ultimate bot (ignore the potatoes)
+features:
+  bot_user:
+    display_name: CrushDB
+    always_online: false
+oauth_config:
+  scopes:
+    bot:
+      - channels:history
+      - channels:read
+      - users:read
+      - users.profile:read
+settings:
+  event_subscriptions:
+    request_url: https://casual-renewing-reptile.ngrok-free.app/slack/events
+    bot_events:
+      - message.channels
+  org_deploy_enabled: false
+  socket_mode_enabled: false
+  token_rotation_enabled: false

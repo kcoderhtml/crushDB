@@ -2,6 +2,10 @@
   "name": "crushdb",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "ngrok": "ngrok http 3000 --domain=casual-renewing-reptile.ngrok-free.app",
+    "dev": "bun run --watch slackbot.ts"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
@@ -11,6 +15,7 @@
   "dependencies": {
     "@slack/bolt": "^3.22.0",
     "@types/crypto-js": "^4.2.2",
-    "crypto-js": "^4.2.0"
+    "crypto-js": "^4.2.0",
+    "slack-edge": "^1.2.0"
   }
 }
